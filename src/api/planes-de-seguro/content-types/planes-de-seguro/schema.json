@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "planes_de_seguros",
+  "info": {
+    "singularName": "planes-de-seguro",
+    "pluralName": "planes-de-seguros",
+    "displayName": "Planes de seguro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    }
+  }
+}

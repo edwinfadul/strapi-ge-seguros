@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seguros_por_categorias",
+  "info": {
+    "singularName": "seguros-por-categoria",
+    "pluralName": "seguros-por-categorias",
+    "displayName": "Seguros por categoria",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::planes-de-seguro.planes-de-seguro"
+    },
+    "precio": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
