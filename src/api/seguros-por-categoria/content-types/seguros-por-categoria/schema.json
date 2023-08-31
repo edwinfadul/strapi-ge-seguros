@@ -20,7 +20,7 @@
       "type": "text",
       "required": true
     },
-    "imagen": {
+    "imagen_de_portada": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -35,6 +35,14 @@
     },
     "precio": {
       "type": "string",
+      "required": true
+    },
+    "imagen_detalle_de_seguro": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
       "required": true
     }
   }
